@@ -1,3 +1,0 @@
-C:/C++/algo/1/cmake-build-debug/CMakeFiles/1.dir
-C:/C++/algo/1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/C++/algo/1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

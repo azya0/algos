@@ -2,7 +2,7 @@
 	"entries" : 
 	[
 		{
-			"name" : "1lab_4var_BINARY_DIR",
+			"name" : "1_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -11,10 +11,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/C++/algo/1lab-4var/cmake-build-debug"
+			"value" : "C:/C++/algo/1/cmake-build-debug"
 		},
 		{
-			"name" : "1lab_4var_IS_TOP_LEVEL",
+			"name" : "1_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -26,7 +26,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "1lab_4var_SOURCE_DIR",
+			"name" : "1_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/C++/algo/1lab-4var"
+			"value" : "C:/C++/algo/1"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/C++/algo/1lab-4var/cmake-build-debug"
+			"value" : "c:/C++/algo/1/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -659,7 +659,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/C++/algo/1lab-4var"
+			"value" : "C:/C++/algo/1"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -671,7 +671,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/1lab_4var"
+			"value" : "C:/Program Files (x86)/1"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -699,7 +699,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "C:/PROGRA~1/JETBRA~1/CLION2~1.4/bin/ninja/win/ninja.exe"
+			"value" : "C:/Program Files/JetBrains/CLion 2022.2.4/bin/ninja/win/ninja.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -887,7 +887,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "1lab_4var"
+			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_RANLIB",

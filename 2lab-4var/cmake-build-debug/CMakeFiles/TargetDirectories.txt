@@ -1,0 +1,3 @@
+C:/C++/algo/2lab-4var/cmake-build-debug/CMakeFiles/2lab_4var.dir
+C:/C++/algo/2lab-4var/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/C++/algo/2lab-4var/cmake-build-debug/CMakeFiles/rebuild_cache.dir

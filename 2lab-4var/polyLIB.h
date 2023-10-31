@@ -12,8 +12,8 @@ template <typename T> requires (
 )
 class Polynom {
 private:
-    int length;
-    T* coefficients;
+    int length;         // Длинна полинома
+    T* coefficients;    // Массив коэфициентов полинома
 public:
     explicit Polynom(int size) noexcept {
         length = size;
@@ -41,12 +41,20 @@ public:
             length++;
         }
 
+        delete newElm;
+
         coefficients = new T[length];
 
         for (int index = 0; index < length; index++) {
-            head = *head.next;
-            coefficients[index] = head.value;
+            auto item = head.next;
+            coefficients[index] = item->value;
+            head.next = item->next;
+            delete item;
         }
+    }
+
+    ~Polynom() {
+        delete coefficients;
     }
 
     [[nodiscard]] int getLength() const {

@@ -64,8 +64,8 @@ void run() {
     std::cin >> outputName;
     std::ofstream output("../files/" + outputName);
 
-    if (result.empty()) {
-        output << -1;
+    if (result.size() < K) {
+        output << 0;
     } else {
         for (int value : result) {
             output << value << ' ';

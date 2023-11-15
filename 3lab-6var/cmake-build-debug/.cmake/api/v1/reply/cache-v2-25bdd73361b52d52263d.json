@@ -11,7 +11,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/C++/3lab-6var/cmake-build-debug"
+			"value" : "C:/C++/algo/3lab-6var/cmake-build-debug"
 		},
 		{
 			"name" : "3lab_6var_IS_TOP_LEVEL",
@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/C++/3lab-6var"
+			"value" : "C:/C++/algo/3lab-6var"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/C++/3lab-6var/cmake-build-debug"
+			"value" : "c:/C++/algo/3lab-6var/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -659,7 +659,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/C++/3lab-6var"
+			"value" : "C:/C++/algo/3lab-6var"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",

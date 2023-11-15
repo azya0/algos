@@ -1,4 +1,4 @@
-# Install script for directory: C:/C++/3lab-6var
+# Install script for directory: C:/C++/algo/3lab-6var
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/C++/3lab-6var/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/C++/algo/3lab-6var/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

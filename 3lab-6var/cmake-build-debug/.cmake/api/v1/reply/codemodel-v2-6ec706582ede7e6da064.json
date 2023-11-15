@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/C++/3lab-6var/cmake-build-debug",
-		"source" : "C:/C++/3lab-6var"
+		"build" : "C:/C++/algo/3lab-6var/cmake-build-debug",
+		"source" : "C:/C++/algo/3lab-6var"
 	},
 	"version" : 
 	{

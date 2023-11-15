@@ -1,0 +1,3 @@
+C:/C++/3lab-6var/cmake-build-debug/CMakeFiles/3lab_6var.dir
+C:/C++/3lab-6var/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/C++/3lab-6var/cmake-build-debug/CMakeFiles/rebuild_cache.dir

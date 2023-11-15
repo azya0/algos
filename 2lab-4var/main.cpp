@@ -1,23 +1,35 @@
 #include <iostream>
-#include "polyLIB.h"
+#include "polyLIB/polyLIB.h"
 
 
 int main() {
-    Polynom<double> main("files/poly.txt");
-    Polynom<int> other("files/other.txt");
+    Polynom<int> main("files/poly.txt");
+    Polynom<double> other("files/other.txt");
+    Polynom<int> flex("files/flex.txt");
 
-    std::cout << "Polynom from \"files/poly.txt\":\n";
+    flex.print();
+    std::cout << std::endl;
+
     main.print();
-    std::cout << "\nPolynom from \"files/other.txt\":\n";
+    std::cout << std::endl;
+
+    main.print();
+    std::cout << std::endl;
+
     other.print();
-    std::cout << "\nSum of these polynomials:\n";
+    std::cout << std::endl;
     (main + other).print();
-    std::cout << "\nThe first polynomial minus the second:\n";
+    std::cout << std::endl;
+    (other + main).print();
+    std::cout << std::endl;
     (main - other).print();
-    std::cout << "\nThe second polynomial minus the first:\n";
-    (other - main).print();
-    std::cout << "\nThe second polynomial mul the first:\n";
-    (main * other).print();
-    std::cout << "\nConvert first polynom from double to int:\n";
-    main.convert<int>().print();
+    std::cout << std::endl;
+    auto huynya = (other - main);
+    (huynya - flex).print();
+    std::cout << std::endl;
+    auto first = (other - main);
+    auto second = (main - other);
+    (first + second).print();
+    std::cout << std::endl;
+    (main * flex).print();
 }

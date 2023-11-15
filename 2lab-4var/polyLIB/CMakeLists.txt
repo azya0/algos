@@ -1,0 +1,1 @@
+add_library(polyLIB STATIC polyLIB.h polyLIB.cpp)

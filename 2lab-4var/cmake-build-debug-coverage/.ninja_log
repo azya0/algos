@@ -1,0 +1,5 @@
+# ninja log v5
+7	575	7217665537524194	polyLIB/CMakeFiles/polyLIB.dir/polyLIB.cpp.obj	739ca73bc98ea684
+575	636	7217665538141364	polyLIB/libpolyLIB.a	7dd6b1a93307183b
+4	644	7217666386762174	CMakeFiles/2lab_4var.dir/main.cpp.obj	b60be406bedb312c
+645	747	7217666387774861	2lab_4var.exe	653b8102e89b990

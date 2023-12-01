@@ -1,3 +1,0 @@
-﻿  main.cpp
-C:\Users\Азя\source\repos\4lab-4var\4lab-4var\main.cpp(53,87): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-  4lab-4var.vcxproj -> C:\Users\Азя\source\repos\4lab-4var\x64\Debug\4lab-4var.exe

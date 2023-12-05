@@ -1,3 +1,4 @@
 ﻿  main.cpp
-C:\Users\Азя\source\repos\4lab-4var\4lab-4var\main.cpp(53,87): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
-  4lab-4var.vcxproj -> C:\Users\Азя\source\repos\4lab-4var\x64\Debug\4lab-4var.exe
+C:\Users\Азя\source\repos\azya0\algos\4lab-4var\4lab-4var\main.cpp(68,87): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Азя\source\repos\azya0\algos\4lab-4var\4lab-4var\main.cpp(86,16): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  4lab-4var.vcxproj -> C:\Users\Азя\Source\Repos\azya0\algos\4lab-4var\x64\Debug\4lab-4var.exe

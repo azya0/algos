@@ -3,7 +3,7 @@
 #include <fstream>
 
 
-#define N 5
+#define N 7
 
 
 class Tree {
@@ -11,6 +11,7 @@ public:
 	std::pair<Tree*, Tree*> *subtree = new std::pair<Tree*, Tree*>;
 	std::string data;
 	int length;
+	int depth = 0;
 
 	Tree(const std::string &str) {
 		data = str;
@@ -46,6 +47,20 @@ void fillTree(const std::vector<Tree*> trees, const std::string filename) {
 	}
 }
 
+int countDepth(Tree* tree, int *maxDepth, int current = 0) {
+	if (tree == nullptr)
+		return 0;
+
+	if (*maxDepth < current)
+		*maxDepth = current;
+
+	tree->depth = current;
+	countDepth(tree->left(), maxDepth, current + 1);
+	countDepth(tree->right(), maxDepth, current + 1);
+
+	return tree->depth;
+}
+
 int calculate(Tree* tree) {
 	if (tree == nullptr)
 		return 0;
@@ -55,16 +70,34 @@ int calculate(Tree* tree) {
 	return tree->length;
 }
 
-void print(const std::vector<Tree*> trees) {
-	for (int tree_index = 0; tree_index < N; tree_index++) {
-		auto tree = trees[tree_index];
-		for (int index = 0; index < N; index++) {
-			if (trees[index] == tree->left() || trees[index] == tree->right())
-				std::cout << trees[index]->length << ' ';
+void fillMatrix(Tree* tree, std::vector<std::vector<int>>& matrix, int position, int add) {
+	if (tree == nullptr)
+		return;
+
+	matrix[tree->depth][position] = tree->length;
+	//matrix[tree->depth][position] = tree->data.size() - 1;
+	int newAdd = add / 2;
+
+	fillMatrix(tree->left(), matrix, position - add + newAdd, newAdd);
+	fillMatrix(tree->right(), matrix, position + add - newAdd, newAdd);
+}
+
+void print(Tree* head, int maxDepth) {
+	int maxLength = std::pow(2, maxDepth + 1) - 1;
+	std::vector<std::vector<int>> matrix(maxDepth + 1, std::vector<int>(maxLength, 0));
+	
+	fillMatrix(head, matrix, maxLength / 2, maxLength / 2);
+
+	for (int row = 0; row < maxDepth + 1; row++) {
+		for (int col = 0; col < maxLength; col++) {
+			int value = matrix[row][col];
+			
+			if (value == 0)
+				std::cout << ' ';
 			else
-				std::cout << "0 ";
+				std::cout << value;
 		}
-		std::cout << "\tSelf-length: " << tree->data.size() << "\tTotal: " << tree->length << '\n';
+		std::cout << '\n';
 	}
 }
 
@@ -84,7 +117,9 @@ int main() {
 	auto head = trees[4];
 	head->length = calculate(head);
 
-	print(trees);
+	int maxDepth = 0;
+	countDepth(head, &maxDepth);
+ 	print(head, maxDepth);
 
 	return 0;
 }

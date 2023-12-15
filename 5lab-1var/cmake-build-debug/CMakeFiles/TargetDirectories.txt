@@ -1,0 +1,3 @@
+C:/C++/algo/5lab-1var/cmake-build-debug/CMakeFiles/5lab_1var.dir
+C:/C++/algo/5lab-1var/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/C++/algo/5lab-1var/cmake-build-debug/CMakeFiles/rebuild_cache.dir
